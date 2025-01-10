@@ -121,6 +121,7 @@ h1 {
     }
 }
 
+
 button {
     position: relative; /* Cambiado de 'fixed' a 'relative' */
     margin-top: 20px; /* Agregar un margen superior para separarlos del título */
@@ -147,6 +148,7 @@ button:hover {
                 0 0 300px #ff6666; /* Sombra intensa alrededor del botón */
 }
 
+
 img {
     max-width: 100%; /* Asegura que la imagen nunca exceda el ancho del contenedor */
     height: auto; /* Mantiene la proporción de la imagen */
@@ -166,4 +168,16 @@ img {
 header img {
     width: 100%;
     height: auto;
+}
+
+#logo {
+    width: 100%; /* Hace que la imagen sea responsiva, ocupando el 100% del contenedor */
+    height: auto; /* Mantiene la relación de aspecto de la imagen */
+}
+
+@media (max-width: 768px) {
+    #logo {
+        width: 80%; /* Puedes ajustar esto para que se vea mejor en pantallas más pequeñas */
+        max-width: 400px; 
+    }
 }
