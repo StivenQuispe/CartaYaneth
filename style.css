@@ -121,11 +121,10 @@ h1 {
     }
 }
 
-
 button {
-    position: fixed; /* Fija el botón en la parte inferior */
-    bottom: 20px; /* Ajusta la distancia desde la parte inferior */
-    left: 50%; /* Lo coloca en el centro de la pantalla */
+    position: relative; /* Cambiado de 'fixed' a 'relative' */
+    margin-top: 20px; /* Agregar un margen superior para separarlos del título */
+    left: 50%; /* Lo coloca en el centro horizontalmente */
     transform: translateX(-50%); /* Ajusta la posición para que quede perfectamente centrado */
     border: none; /* Elimina el borde por defecto */
     height: 50px; /* Establece la altura */
