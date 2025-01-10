@@ -1,0 +1,149 @@
+html,
+body{
+    position: relative;
+    height: 100%;
+}
+body{
+    background-color:aquamarine;
+    font-family: Helvetica Neve, Helvetica;
+    font-size: 14px;
+    color: #000;
+    margin: 0;
+    padding: 0; 
+}
+
+.swiper{
+    width: 100%;
+    padding: 150px 0 50px 0;
+}
+
+.swiper-slide{
+    width: 300px;
+    height: 500px;
+    background-color: #323232;
+    box-shadow: 0 0 20px rgba(0, 0,0, 0.4);
+    padding: 40px;
+    text-align: center;
+}
+
+.icons{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.icons{
+    font-size: 20px;
+    color: #FFB900;
+}
+
+.icons img{
+    width: 120px;
+}
+
+.product-content{
+    display: flex;
+    justify-content: space-between;
+}
+
+.product-txt{
+    flex-basis: 50%;
+    text-align: left;
+}
+
+.product-txt span{
+    font-size: 25px;
+    color:#FFB900;
+    font-weight: bold;
+}
+
+.product-txt h3{
+    font-size: 20px;
+    color: #ffffff;
+    text-transform: uppercase;
+}
+
+.product-txt p{
+    font-size: 14px;
+    color:#c4c4c4;
+}
+
+.product-img{
+    flex-basis: 50%;
+    text-align: right;
+}
+
+.product-img img{
+    width: 120px;
+}
+
+.btn-1{
+    display: inline-block;
+    pad: 13px 55px;
+    border: 1px solid #FFB900;
+    border-radius: 25px;
+    color: #FFB900;
+    text-decoration: none;
+    margin-top: 50px;   
+}
+
+h1 {
+    text-align: center; /* Centra el texto */
+    font-size: 3rem; /* Ajusta el tamaño de la fuente */
+    color: #FFB900; /* Un color llamativo */
+    font-weight: bold; /* Para que el texto resalte */
+    margin-top: 20px; /* Espacio en la parte superior */
+    padding: 10px; /* Espacio alrededor del texto */
+    text-transform: uppercase; /* Para hacer el texto todo en mayúsculas */
+    letter-spacing: 3px; /* Espaciado entre letras para mayor estilo */
+    background-color: rgba(0, 0, 0, 0.6); /* Fondo oscuro para contraste */
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Sombra suave */
+    width: 80%; /* Ajusta el ancho en pantallas pequeñas */
+    margin-left: auto; /* Centra horizontalmente */
+    margin-right: auto; /* Centra horizontalmente */
+}
+
+/* Estilos específicos para pantallas móviles */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2.5rem; /* Ajusta el tamaño de la fuente en pantallas pequeñas */
+        padding: 15px; /* Aumenta el espacio alrededor del texto */
+        letter-spacing: 2px; /* Ajusta el espaciado en pantallas pequeñas */
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 2rem; /* Reduce el tamaño en pantallas más pequeñas */
+        padding: 10px; /* Ajusta el relleno */
+    }
+}
+
+
+button {
+    position: fixed; /* Fija el botón en la parte inferior */
+    bottom: 20px; /* Ajusta la distancia desde la parte inferior */
+    left: 50%; /* Lo coloca en el centro de la pantalla */
+    transform: translateX(-50%); /* Ajusta la posición para que quede perfectamente centrado */
+    border: none; /* Elimina el borde por defecto */
+    height: 50px; /* Establece la altura */
+    width: 200px; /* Establece el ancho */
+    font-size: 22px; /* Tamaño de fuente */
+    transition: 0.3s linear; /* Transición suave para efectos */
+    cursor: pointer; /* Cambia el cursor al pasar por encima */
+    background-color: #FFB900; /* Color de fondo inicial */
+    color: white; /* Color del texto */
+    border-radius: 25px; /* Bordes redondeados */
+}
+
+/* Efecto hover para el botón */
+button:hover {
+    background-color: #ff6666; /* Color de fondo al pasar el mouse */
+    box-shadow: 0 0 5px #ff6666, 
+                0 0 25px #ff6666, 
+                0 0 50px #ff6666, 
+                0 0 100px #ff6666, 
+                0 0 300px #ff6666; /* Sombra intensa alrededor del botón */
+}
